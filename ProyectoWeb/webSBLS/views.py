@@ -21,8 +21,7 @@ def galeria(request):
     contexto={"trabajos":trabajos,'cantidad':cantidad}
     return render(request,"galeria.html",contexto)
 
-def aceite(request):
-    return render(request,"aceite.html")
+
 
 def bienvenido(request):
     return render(request,"bienvenido.html")
@@ -66,8 +65,7 @@ def cerrar_sesion(request):
     contexto["trabajos"]=trabajos
     return render(request,"index.html",contexto)
 
-def quienes_somos(request):
-    return render(request,"quienes_somos.html")
+
 
 def registrar_atencion(request):
     return render(request,"registrar_atencion.html")
@@ -94,8 +92,7 @@ def registro(request):
 
     return render(request,"registro.html",contexto)
 
-def turbo(request):
-    return render(request,"turbo.html")
+
 
 def admin_trabajos(request):
     cate=Categoria.objects.all()

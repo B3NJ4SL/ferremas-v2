@@ -6,15 +6,15 @@ from .views import *
 urlpatterns = [
     path('', index,name='IND'),
     path('galeria/',galeria,name='GALE'),
-    path('aceite/',aceite,name='ACEI'),
+
     path('bienvenido/',bienvenido,name='BIEN'),
     path('contacto/',contacto,name='CONTA'),
     path('login/',login,name='LOGIN'),
     path('cerrar/',cerrar_sesion,name='CERR'),
-    path('quienes_somos/',quienes_somos,name='QUIENES'),
+    
     path('registrar_atencion/',registrar_atencion,name='REGAT'),
     path('registro_colab/',registro,name='REGCOL'),
-    path('turbo/',turbo,name='TURB'),
+    
     path('admin_trabajos/',admin_trabajos,name='ADMT'),
     path('detalle/<id>/',detalle_trabajo,name='DET_TRA'),
     path('buscar_nom/',buscar_nom,name='BUSC_NOM'),

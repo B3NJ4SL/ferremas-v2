@@ -20,7 +20,7 @@ class Trabajo(models.Model):
     descripcion=models.TextField()
     foto=models.ImageField(upload_to='fotos',null=True,default='fotos/auto_default.jpg')
     categoria=models.ForeignKey(Categoria,on_delete=models.CASCADE)
-    publicado=models.BooleanField(default=False)
+    publicado=models.BooleanField(default=True)
     comentario=models.TextField(null=True)
     usuario=models.ForeignKey(User,on_delete=models.CASCADE,null=True)
 
